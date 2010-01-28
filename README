@@ -1,0 +1,3 @@
+mausbot is a perl irc bot.  Its goals are to be concise, readable, configurable
+and featureful.  Its main development takes place on a Debian system, and the
+majority of its libraries are available through apt in addition to CPAN.
