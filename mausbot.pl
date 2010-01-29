@@ -15,7 +15,7 @@ $SIG{'__WARN__'} = sub {warn scalar localtime().$".shift};
 
 POE::Session->create(
     package_states => [
-        main => [ qw(_start ), handled_events()]
+        main => [qw(_start )]
     ]
 );
 $poe_kernel->run();
