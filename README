@@ -1,3 +1,48 @@
 mausbot is a perl irc bot.  Its goals are to be concise, readable, configurable
 and featureful.  Its main development takes place on a Debian system, and the
 majority of its libraries are available through apt in addition to CPAN.
+
+not working yet! keep your pants on and hold your horses (hopefully the two are
+unrelated)
+
+DEPENDENCIES
+============
+perl 5.10
+
+apt
+---
+libhash-merge-perl           (Hash::Merge)
+libpath-class-perl           (Path::Class)
+libjson-xs-perl              (JSON::XS)
+libpoe-component-irc-perl    (POE::Component::IRC)
+
+
+
+
+cpan
+----
+POE::Component::IRC::State
+POE::Component::IRC::Plugin::AutoJoin
+POE::Component::IRC::Plugin::Logger
+POE::Component::IRC::Plugin::Connector
+
+
+
+
+
+
+
+QUICKSTART
+==========
+placeholder
+
+
+
+
+
+
+
+
+GENERAL INFORMATION
+===================
+placeholder
