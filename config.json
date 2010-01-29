@@ -1,0 +1,26 @@
+{
+   "nick" : "your_nickname",
+   "pass" : "your_password",
+   "ircname" : "mausbot",
+   "server" : "your_irc_server.tld",
+   "port" : 6669,
+   "ssl" : false,
+   "channels" : [
+      "foo",
+      "bar",
+      "baz"
+   ],
+   "admins" : {
+      "friend@vhost.tld" : 5,
+      "your@vhost.tld" : 9
+   },
+   "command_prefix" : "[.!]",
+   "ping_freq" : 30,
+   "reconnect_timeout" : 60,
+   "rejoin_on_kick" : true,
+   "rejoin_delay_kick" : 5,
+   "rejoin_delay_ban" : 30,
+   "log_path" : "logs",
+   "log_public_msgs" : true,
+   "log_private_msgs" : true
+}

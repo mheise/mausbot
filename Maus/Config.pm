@@ -11,16 +11,24 @@ use Hash::Merge qw(merge);
 use base qw(Exporter);
 our @EXPORT_OK = qw(get_config);
 
-my $main_config_json = file('config.json')->slurp
-	or croak "Couldn't open config file: $!";
-my $main_config = decode_json($config_json);
+my ($config_json, $site_config_json, $config, $site_config);
+eval {
+		$config_json = file('config.json')->slurp;
+		$config = decode_json($config_json);
+} or do {
+		croak "Couldn't parse config file: $@";
+};
 
-my $site_config_json = file('site_config.json')->slurp
-	or carp "Couldn't open site config file: $!";
-my $site_config = decode_json($site_config_json);
+eval {
+		$site_config_json = file('site_config.json')->slurp;
+		$site_config = decode_json($site_config_json);
+} or do {
+		carp "Couldn't parse site config file: $@";
+		$site_config = {};
+};
 
 Hash::Merge::set_behavior('RIGHT_PRECEDENT');
-my %config = %{ merge($main_config, $site_config) };
+my %config = %{ merge($config, $site_config) };
 
 sub get_config {
 	my ($item) = @_;
