@@ -1,0 +1,12 @@
+get basic connectability
+set up maus::command for basic shit
+    canonical name
+    aliases
+    help/usage text
+    funcptr
+    parse irc event(s)
+set up mouse::admincommand
+set up piping in maus::command
+port commands over from cheesebot
+port unimplemented features from cheesebot
+
