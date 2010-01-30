@@ -11,10 +11,11 @@ perl 5.10
 
 apt
 ---
-libhash-merge-perl           (Hash::Merge)
-libpath-class-perl           (Path::Class)
-libjson-xs-perl              (JSON::XS)
-libpoe-component-irc-perl    (POE::Component::IRC)
+libhash-merge-perl                     (Hash::Merge)
+libpath-class-perl                     (Path::Class)
+libjson-xs-perl                        (JSON::XS)
+libpoe-component-irc-perl              (POE::Component::IRC)
+libmoosex-strictconstructor-perl       (MooseX::StrictConstructor)
 
 
 
@@ -25,6 +26,7 @@ POE::Component::IRC::State
 POE::Component::IRC::Plugin::AutoJoin
 POE::Component::IRC::Plugin::Logger
 POE::Component::IRC::Plugin::Connector
+MooseX::ClassAttribute
 
 
 

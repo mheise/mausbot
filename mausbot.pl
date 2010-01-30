@@ -11,7 +11,7 @@ use POE qw(Component::IRC::State Component::IRC::Plugin::AutoJoin
 use Maus::Config qw(get_config);
 
 #timestamps are nice for long-running things like this
-$SIG{'__WARN__'} = sub {warn scalar localtime().$".shift};
+$SIG{'__WARN__'} = sub {warn scalar localtime().' '.shift};
 
 POE::Session->create(
     package_states => [
@@ -40,8 +40,8 @@ sub _start {
     ));
     $irc->plugin_add('Logger', POE::Component::IRC::Plugin::Logger->new(
             Path    => get_config('log_path'),
-            Private => get_config('log_public_msgs'),
-            Public  => get_config('log_private_msgs'),
+            Public => get_config('log_public_msgs'),
+            Private  => get_config('log_private_msgs'),
     ));
 
     $irc->yield(register => 'all');
