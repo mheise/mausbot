@@ -18,5 +18,5 @@ subtype 'CommandStr'
 
 has 'name' => (isa => 'CommandStr', is => 'ro', required => 1);
 has 'help_text' => (isa => 'IRC_Str', is => 'ro', required => 1);
-has 'func' => (isa => 'CodeRef', is => 'ro', required => 1_;
+has 'func' => (isa => 'CodeRef', is => 'ro', required => 1);
 has 'aliases' => (isa => 'ArrayRef[CommandStr]', is => 'ro', required => 0);
