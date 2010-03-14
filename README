@@ -16,6 +16,7 @@ libpath-class-perl                     (Path::Class)
 libjson-xs-perl                        (JSON::XS)
 libpoe-component-irc-perl              (POE::Component::IRC)
 libmoosex-strictconstructor-perl       (MooseX::StrictConstructor)
+libmoosex-types-perl                   (MooseX::Types)
 
 
 

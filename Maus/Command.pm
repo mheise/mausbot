@@ -1,8 +1,7 @@
 package Maus::Command;
 use Moose;
-use Moose::Util::TypeConstraints;
+use MooseX::Types;
 use MooseX::StrictConstructor;
-use MooseX::ClassAttribute;
 
 subtype 'IRC_Str'
     => as 'Str'
