@@ -22,11 +22,12 @@ $poe_kernel->run();
 
 sub _start {
     my $irc = POE::Component::IRC::State->spawn(
-        Nick   => get_config('nick'),
-        Server => get_config('server'),
-        Port   => get_config('port'),
-        UseSSL => get_config('ssl'),
-        Ircname=> get_config('ircname'),
+        Nick    => get_config('nick'),
+        Server  => get_config('server'),
+        Port    => get_config('port'),
+        UseSSL  => get_config('ssl'),
+        Ircname => get_config('ircname'),
+        Username=> get_config('username'),
     );
     $irc->plugin_add('Connector', POE::Component::IRC::Plugin::Connector->new(
         delay => get_config('ping_freq'),

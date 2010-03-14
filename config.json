@@ -1,7 +1,8 @@
 {
    "nick" : "your_nickname",
    "pass" : "your_password",
-   "ircname" : "mausbot",
+   "ircname" : "Perl IRC Bot - http://github.com/kaesees/mausbot/",
+   "username" : "mausbot",
    "server" : "your_irc_server.tld",
    "port" : 6669,
    "ssl" : false,

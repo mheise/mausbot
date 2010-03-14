@@ -26,7 +26,6 @@ POE::Component::IRC::State
 POE::Component::IRC::Plugin::AutoJoin
 POE::Component::IRC::Plugin::Logger
 POE::Component::IRC::Plugin::Connector
-MooseX::ClassAttribute
 
 
 
